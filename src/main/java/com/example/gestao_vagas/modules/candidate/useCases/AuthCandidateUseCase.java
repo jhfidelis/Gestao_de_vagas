@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.example.gestao_vagas.modules.candidate.CandidadteRepository;
+import com.example.gestao_vagas.modules.candidate.CandidateRepository;
 import com.example.gestao_vagas.modules.candidate.dto.AuthCandidateRequestDTO;
 import com.example.gestao_vagas.modules.candidate.dto.AuthCandidateResponseDTO;
 
@@ -25,7 +25,7 @@ public class AuthCandidateUseCase {
     private String secretKey;
 
     @Autowired
-    private CandidadteRepository candidateRepository;
+    private CandidateRepository candidateRepository;
 
     @Autowired
     PasswordEncoder passwordEncoder;

@@ -5,14 +5,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.gestao_vagas.exceptions.UserFoundException;
-import com.example.gestao_vagas.modules.candidate.CandidadteRepository;
+import com.example.gestao_vagas.modules.candidate.CandidateRepository;
 import com.example.gestao_vagas.modules.candidate.CandidateEntity;
 
 @Service
 public class CreateCandidateUseCase {
 
     @Autowired
-    private CandidadteRepository candidadteRepository;
+    private CandidateRepository candidadteRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
